@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda página responsiva</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background-color: #2b6cb0;
+            color: white;
+        }
+
+        nav{
+            background-color: #e2b6cb;
+        }
+        footer{
+            background-color: #2b6cb0;
+            color: white;
+            text-align: center;
+        }
+        /*Grid de 2 columnas*/
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+        .caja{
+            background-color: #f7fafc;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        /*en pantallas pequeñas: 1 grid*/
+        @media (max-width: 700px) {
+            .grid{
+                grid-template-columns: 1fr;
+            }
+            h2{
+                font-size: 58px;
+            }
+            p{
+                font-size: 55px;
+            }
+        }
+        nav a{
+            margin-right:10px ;
+            text-decoration: none;
+            color: #1a202c
+        }
+    </style>
+    <header>
+        <h1>My web responsive(Grid)</h1>
+        <p>Ejemplo simple usando Grid</p>
+    </header>
+
+    <nav>
+        <a href="#"> Inicio</a>
+        <a href="#"> Blog</a>
+        <a href="#"> Acerca</a>
+    </nav>
+    <main>
+        <di class="grid">
+            <article class="caja">
+                <h2>Artículo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsa? Optio suscipit porro rerum rem odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, idit.</p>
+            </article>
+
+             <article class="caja">
+                <h2>Artículo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsa? Optio suscipit porro rerum rem odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, idit.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>2026 - ejemplo grid</p>
+    </footer>
+
+</body>
+</html>

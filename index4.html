@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tercer página web responsive</title>
+</head>
+<body>
+    <style>
+  body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+   header, nav, main,footer{
+            padding: 15px;
+        }
+         header{
+            background: black;
+            color: rgb(255, 255, 251);
+        }
+    nav{
+            background: rgb(209, 205, 205);
+            
+        }
+        footer {
+              background: black;
+            color: rgb(255, 255, 251);
+            text-align: center;
+        }
+       .wrap {
+        max-width: 900px;
+        margin: auto;
+    
+       }
+       main div {
+        display: flex;
+       }
+
+       nav a {
+     display:inline-block;
+     margin: 5px 10px 5px 0;
+     padding: 8px 10px;
+     background: white;
+     border: 1px solid #ddd;
+     text-decoration: none;
+     color: #111;
+
+       }
+       .caja {
+        background: #fafafa;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 15px 0;
+       }
+
+    </style>
+    
+<header>
+ <div class="wrap">
+    <h1> Mi web responsive-Valeria Cabrera</h1>
+    <p>Esto funciona bien móvil sin casi usar media queries</p>
+
+ </div>
+
+</header>
+
+<nav>
+ <div class="wrap"> 
+ <a href="#">Inicio</a>
+<a href="#">Productos </a>
+ <a href="#">Galería</a>
+ <a href="#">Contacto</a>
+ 
+ </div>
+
+</nav>
+
+<main>
+ <div class="wrap">
+    <section class="caja">
+        <h2>Seciión A</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quo suscipit quidem accusamus, officia ut expedita, similique neque quisquam in libero quaerat repellendus, rem voluptatum mollitia veritatis aut! Quidem, minima!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque deserunt, fugit ratione fugiat, molestiae ipsa placeat sit nisi suscipit reiciendis aspernatur consequatur maxime facere eaque ut fuga officiis, minus adipisci.</p>
+   <img src="https://www.hdwallpapers.in/download/orange_lamborghini_revuelto_hypercar_car_4k_5k_hd_cars-5120x2880.jpg" >
+    </section>
+
+    <section class="caja">
+        <h2>Seciión B</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quo suscipit quidem accusamus, officia ut expedita, similique neque quisquam in libero quaerat repellendus, rem voluptatum mollitia veritatis aut! Quidem, minima!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque deserunt, fugit ratione fugiat, molestiae ipsa placeat sit nisi suscipit reiciendis aspernatur consequatur maxime facere eaque ut fuga officiis, minus adipisci.</p>
+   <img src="https://www.hdwallpapers.in/download/orange_lamborghini_revuelto_hypercar_car_4k_5k_hd_cars-5120x2880.jpg" >
+    </section>
+
+</div>
+
+
+</main>
+
+<footer>
+<div class="wrap">
+    <p>2026-Ejemplo básico responsive</p>
+
+</div>
+</footer>
+
+</body>
+</html>
